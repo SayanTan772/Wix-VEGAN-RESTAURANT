@@ -10,6 +10,7 @@ body.style.height = "100vh";
 body.style.backgroundColor = "rgb(252,245,238)";
 body.style.fontFamily = "Madefor,Helvetica Neue,Helvetica,Arial,メイリオ,meiryo,ヒラギノ角ゴ pro w3,hiragino kaku gothic pro,sans-serif";
 body.style.overflowX = "hidden";
+body.style.margin = "0";
 
 const nav = document.createElement("div");
 nav.style.width = "100%";
@@ -423,6 +424,7 @@ function checkScreen() {
     if(screenWidth < mobileBreakpoint) {
         console.log("mobile view");
 
+        body.style.overflowX = "hidden";
         nav.style.height = "70px";
         nav.style.padding = "0px 16px";
         nav.style.justifyContent = "space-between";
@@ -506,16 +508,17 @@ function checkScreen() {
         date.style.margin = "14px 0px";
         timeDropdown.style.width = "92%";
         timeDropdown.style.margin = "14px 0px";
-        
+
         order.style.width = "70px";
         order.style.height = "70px";
-        order.style.right = "25px";
-        order.style.bottom = "25px";
         order.innerHTML = `<svg preserveAspectRatio="xMidYMid meet" data-bbox="23.837 20.132 153.161 158.956" viewBox="23.837 20.132 153.161 158.956" height="30" width="30" xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation" aria-hidden="true" aria-label=""><defs><style>#comp-l1dnljk6 svg [data-color="1"] {fill: #FCF5EE;}</style></defs>
         <g>
         <path d="m176.6 22.2-.2-1.9-1.9-.1c-2.8-.1-68.6-2.7-106.7 36.9-36.1 37.5-33.3 98.3-32.7 107.1l-10.6 11c-.9.9-.9 2.4.1 3.3.8.8 2.2.8 3-.1l10.7-11.1h3.3c15.6 0 69.4-2.6 102.4-36.9C182.1 90.7 176.9 25 176.6 22.2zm-63 60.4-1.6-48c23.7-8.6 47.2-10 57.2-10.1l-55.6 58.1zm-36.2 37.6-4.4-62c10.2-9.9 22.3-16.9 34.7-21.9l1.6 50.7-31.9 33.2zm-8.5-57.7 4.4 62-33.9 35.3c-.4-15.8.8-65.2 29.5-97.3zm7.6 65.1 62.1 1.9c-30.9 29.9-80.1 33-95.9 33.3l33.8-35.2zm66.2-2.4-62.1-1.9 31.9-33.2 50.7-.4c-4.5 12.5-11 24.9-20.5 35.5zm22-39.9-47.9.4 55.7-58c.2 10-.2 33.5-7.8 57.6z" fill="#FFE4CC" data-color="1"></path>
         </g>
         </svg>`;
+        footer.style.height = "auto";
+        footer.style.padding = "16px 0px";
+        order.style.border = "0.8px solid #ffff";
     } else {
         console.log("desktop/laptop view");
     }
