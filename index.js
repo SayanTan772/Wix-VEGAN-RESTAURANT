@@ -497,8 +497,10 @@ function checkScreen() {
         <p style="width:70%;font-size:16px;font-weight:200;color:rgba(255,255,255,0.45);line-height:30px;">Joana Hill</p>`;
         p.style.textAlign = "center";
         p.style.fontSize = "16px";
-        reserve.style.height = "63%";
+        reserve.style.height = "60%";
         reserve.style.padding = "20px 0px";
+        reserve.style.overflow = "hidden";
+        p.style.fontSize = "16px";
         input_sec.style.flexDirection = "column";
         input_sec.style.margin = "30px 0px";
         guest.style.width = "85%";
