@@ -424,7 +424,6 @@ function checkScreen() {
     if(screenWidth < mobileBreakpoint) {
         console.log("mobile view");
 
-        body.style.overflowX = "hidden";
         nav.style.height = "70px";
         nav.style.padding = "0px 16px";
         nav.style.justifyContent = "space-between";
